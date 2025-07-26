@@ -8,13 +8,11 @@ VibeTime은 "바이브 코딩" 책의 실습 예제로 개발되는 AI 기반 �
 - 🚀 **실전 개발**: 단순한 예제가 아닌, 실제로 배포 가능한 수준의 완성도 높은 앱 구현
 - 📖 **단계별 학습**: 각 챕터별로 기능을 추가하며 점진적으로 완성해가는 과정
 
-## 현재 프로젝트 상태
-- **단계**: 프로젝트 초기 (Pre-Development)
-- **완료된 항목**: 
-  - 상세 요구사항 문서 작성 (vibetime-requirements.md)
-  - CLAUDE.md 개발 가이드 작성
-  - PROJECT_ROADMAP.md 작성
-- **다음 작업**: Chapter 3 워밍업 시작
+## 기술 스택
+- **모바일**: Flutter 3.32 (Provider/Riverpod, go_router, Material Design 3)
+- **웹**: React + TypeScript + Vite (Zustand/Context API, Material-UI/Tailwind CSS)
+- **백엔드**: Firebase (Auth, Firestore, Storage, Functions)
+- **AI/ML**: 클라이언트 사이드 패턴 분석
 
 ## Git 브랜치 전략
 
@@ -38,24 +36,17 @@ main (최종 완성본)
 **목표**: Claude Code와의 대화 방법 학습, 기본적인 앱 개발 프로세스 이해
 
 #### 구현 항목
-- [ ] Flutter 계산기 앱
+- [ ] Flutter 계산기 앱 (Flutter만)
   - [ ] 프로젝트 생성 및 초기 설정
   - [ ] 계산기 UI 레이아웃 (버튼 그리드)
   - [ ] 계산 로직 구현
   - [ ] 상태 관리 (setState 사용)
   - [ ] 에러 처리 (0으로 나누기 등)
 
-- [ ] React 계산기 앱
-  - [ ] Vite 프로젝트 생성
-  - [ ] 계산기 컴포넌트 구조
-  - [ ] useState로 상태 관리
-  - [ ] 스타일링 (CSS/Tailwind)
-
 #### 학습 포인트
 - Claude Code에게 효과적으로 질문하기
 - 에러 메시지 해석 및 해결
 - 코드 리팩토링 요청하기
-- 두 플랫폼 간 개념 비교
 
 ---
 
@@ -98,7 +89,7 @@ main (최종 완성본)
   - [ ] Border radius, Shadow 정의
 
 - [ ] 커스텀 컴포넌트
-  - [ ] FocusButton
+  - [ ] VibeButton
     - [ ] 다양한 크기 (small, medium, large)
     - [ ] 상태별 스타일 (enabled, disabled, loading)
     - [ ] 아이콘 지원
@@ -367,6 +358,17 @@ git diff chapter-6-navigation chapter-7-core-features
 # 자신의 브랜치에서 작업
 git checkout -b my-chapter-7
 ```
+
+### 각 브랜치의 README 구조
+각 챕터 브랜치에는 다음 내용이 포함된 README.md가 있습니다:
+- 🎯 이 챕터에서 배우는 것
+- 📝 주요 프롬프트 예시
+- 💡 프롬프트 작성 팁
+- 🛠 구현된 기능 목록
+- 📦 추가된 패키지
+- 🚀 실행 방법
+- 📂 주요 파일 설명
+- 🔍 다음 챕터 미리보기
 
 ### 커밋 메시지 컨벤션
 ```
